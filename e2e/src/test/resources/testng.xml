@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TiendaDeBarrioE2E" verbose="1">
+    <listeners>
+        <listener class-name="com.tiendadebarrio.e2e.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Auth">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.LoginTests"/>
+        </classes>
+    </test>
+    <test name="Productos">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.ProductTests"/>
+        </classes>
+    </test>
+    <test name="Inventario">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.InventoryTests"/>
+        </classes>
+    </test>
+    <test name="Caja">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.CashTests"/>
+        </classes>
+    </test>
+    <test name="POS">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.PosTests"/>
+        </classes>
+    </test>
+    <test name="Dashboard">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.DashboardTests"/>
+        </classes>
+    </test>
+    <test name="Clientes">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.CustomerTests"/>
+        </classes>
+    </test>
+    <test name="Proveedores">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.SupplierTests"/>
+        </classes>
+    </test>
+    <test name="Compras">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.PurchaseTests"/>
+        </classes>
+    </test>
+    <test name="Usuarios">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.UserTests"/>
+        </classes>
+    </test>
+    <test name="Reportes">
+        <classes>
+            <class name="com.tiendadebarrio.e2e.tests.ReportTests"/>
+        </classes>
+    </test>
+</suite>
